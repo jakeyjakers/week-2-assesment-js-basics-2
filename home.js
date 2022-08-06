@@ -24,7 +24,7 @@
 //CODE HERE
 
 const greetUser = (username) => {
-    return console.log(`welcome back ${username}`)
+    return `welcome back ${username}`
 }
 
 greetUser('andrew')
@@ -89,19 +89,22 @@ console.log(canWeDeliver(85205, deliveryAreaZipCodes))
 
 const canWeDeliverTwo = ((arr, zipcode) => {
     if(arr.includes(zipcode) === true) {
-        return true
+        return `sorry we can't deliver to that adress`
     } else {
-        return false
+        return `you are in our delivery zone!`
     }
 })
 
-canWeDeliverTwo(deliveryAreaZipCodes, '85205', callback => {
-    if(callback === true){
-        return `we cant deliver to that zipcod`
-    } else {
-        return  `you are in our dilivery zone!`
-    }
-})
+console.log(canWeDeliverTwo(deliveryAreaZipCodes, 85205))
+
+//possisible extra, higher order funcition i made but didn't finish due to time. though i bleive the other one passes the requirements
+// canWeDeliverThree(deliveryAreaZipCodes, '85205', callback => {
+//     if(callback === true){
+//         return `we cant deliver to that zipcod`
+//     } else {
+//         return  `you are in our dilivery zone!`
+//     }
+// })
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -138,14 +141,11 @@ const deals = [
 
 //CODE HERE
 
-const replace = (obj) => {
-    obj[0].title = `10% off!`
-    return deals
+const replace = (obj) =>{
+    return obj[0].title = obj[0].title.replace('15', '10')
 }
-
-
-replace(deals)
 console.log(deals)
+
 
 /*
     The restaurant is going to continue its
@@ -163,7 +163,7 @@ console.log(deals)
 //CODE HERE
 
 const replaceTwo = (obj) =>{
-    obj[1].desc = `the deal lasts until the end of April `
+   return obj[1].desc = obj[1].desc.replace('March', "April").trim()
 }
 
 replaceTwo(deals)

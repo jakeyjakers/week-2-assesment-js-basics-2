@@ -125,7 +125,7 @@ const foodArr = [
          category : 'main',
         popularity : 10,
         rating : 9,
-        tags : ['kids', 'basic']
+        tags : ['kids', 'basic', 'family']
     },
     {
         name : 'sausage',
@@ -141,7 +141,7 @@ const foodArr = [
          category : 'main',
         popularity : 10,
         rating : 9,
-        tags : ['kids', 'basic']
+        tags : ['kids', 'alternate']
     },
     {
         name : 'supreme',
@@ -149,7 +149,7 @@ const foodArr = [
          category : 'main',
         popularity : 10,
         rating : 8,
-        tags : ['kids', 'basic']
+        tags : ['kids', 'basic', 'adult']
     },
 ]
 
@@ -167,12 +167,15 @@ const foodArr = [
 */
 
 //CODE HERE
+const callBack = (foodObj) => {
+    return foodObj.tags.inlcudes('basic')
+}
+ const filteredFood = foodArr.filter(callBack)
 
- const filteredFood = foodArr.filter((tags, arr => arr.tags.includes('kids') === true))
+ 
+ console.log(filteredFood)
 
-filteredFood(foodArr, 'kids')
 
-console.log(foodArr)
 
 //////////////////PROBLEM 5////////////////////
 /* 
@@ -216,7 +219,11 @@ console.log(foodArr)
 //CODE HERE
 
 const filterByProperty = function(property, number, type){
- let filterArr = 
+ let filterArr = foodArr.filter() =>{
+        if(type === 'above'){
+
+        }
+ }
 }
 
 
@@ -228,3 +235,4 @@ const filterByProperty = function(property, number, type){
 */
 
 //CODE HERE
+filterByProperty('')

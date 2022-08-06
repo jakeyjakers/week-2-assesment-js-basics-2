@@ -55,10 +55,11 @@ console.log(summedPrice)
 
 //CODE HERE
 const calcFinalPrice = (cartTotal, couponValue, tax) => {
-    return (cartTotal * tax) - couponValue
+    return cartTotal + (cartTotal * tax) - couponValue
 }
 
 calcFinalPrice(10, 1, .06)
+console.log(calcFinalPrice(10, 1, 0.06))
 
 //////////////////PROBLEM 3////////////////////
 /*  

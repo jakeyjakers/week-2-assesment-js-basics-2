@@ -153,3 +153,4 @@ console.log(manager)
 //CODE HERE
 
 manager.getEmployees()
+console.log(manager)

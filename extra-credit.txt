@@ -1,0 +1,9 @@
+1. Weave. they use react, ngnix, cloudfare and angular. I think it could be good ato worka there because they 
+are local and use aomong a long list, html, css, react, and angular. It could be a good first job in tech.
+
+2. My brother in laws company. I can't currnently say exactly what they are currrently doing as my brother in law 
+who works for them could get in trouble. They use java, rust, and react amonsgst others. I'd like to work there because 
+they have a decent apprenticeship program and I'd be using React to help build their web app and program.
+
+3. JB hunt. My neighbor works for this company and i think it could be good to work for them as a front end engineer 
+to further polish my front end skills. And it's work from home. They use several javaScript frameworks and libraries.
